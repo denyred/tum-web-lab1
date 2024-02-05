@@ -10,10 +10,40 @@
             margin: 20px;
         }
 
-        h1, p {
+        h1, h2, p {
             margin-bottom: 10px;
         }
+
+        ul, li {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .language-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .language-grid-item {
+            text-align: center;
+        }
     </style>
+
 </head>
 <body>
     <header>
@@ -39,6 +69,29 @@
             <li><strong>IT colledge</strong> - 2018-2021</li>
             <li><strong>Theoretical Liceum "Miguel de Cervantes Saavedra"</strong> - 2008-2018</li>
         </ul>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <p>All my programming projects, including university-related work, can be found on my <a href="https://github.com/denyred" target="_blank">GitHub</a>.</p>
+    </section>
+    
+    <section>
+        <h2>Language Proficiency</h2>
+        <div class="language-grid">
+            <div class="language-grid-item">
+                <p><strong>English</strong></p>
+                <p>C2 - Fluent</p>
+            </div>
+            <div class="language-grid-item">
+                <p><strong>Russian</strong></p>
+                <p>C2 - Fluent</p>
+            </div>
+            <div class="language-grid-item">
+                <p><strong>Romanian</strong></p>
+                <p>Native Speaker</p>
+            </div>
+        </div>
     </section>
 </body>
 </html>
